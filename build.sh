@@ -1,4 +1,3 @@
-rm main.exe main.o
-g++ -Wall -c "main.cpp"
-g++ -Wall -o "main.exe" "main.o" "sqlite3.dll"
-./main.exe
+#!/bin/bash
+g++ -Wall -std=c++11 -I./ -lsqlite3 test.cpp -o test.exe
+
